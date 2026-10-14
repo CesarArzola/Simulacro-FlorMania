@@ -4,50 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="César Arzola">
-    <title>FlorMania</title>
+    <title>FlorManía</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
+
     <header>
-        <div>
-            <div>
-                <h1>Flor <span>manía</span></h1>
+        <div class="top-nav">
+            <div class="logo">
+                <span class="flor">Flor</span><span class="mania">Manía</span>
             </div>
-            <nav>
-                <div>
-                    <button>Enviar flores</button>
-                </div>
-                <div>
-                    <button>Nosotros</button>
-                </div>
-                <div>
-                    <button>Iniciar Sesión</button>
-                </div>
-            </nav>
+            <div class="nav-links">
+                <a href="#" id="envia-flores">Envía Flores</a>
+                <a href="#">Nosotros</a>
+                <button id="iniciar-sesion">Iniciar Sesión</button>
+            </div>
         </div>
-        <div>
-            <ol>
-                <li>Girasoles</li>
-                <li>Rosas</li>
-                <li>Claveles</li>
-                <li>Lirios</li>
-                <li>Orquideas</li>
-                <li>Margaritas</li>
-            </ol>
+        <div class="bottom-nav">
+            <a href="#">Girasoles</a>
+            <a href="#">Rosas</a>
+            <a href="#">Claveles</a>
+            <a href="#">Tulipanes</a>
+            <a href="#">Orquídeas</a>
+            <a href="#">Margaritas</a>
         </div>
     </header>
 
     <main>
-        <div>
-            <div>
-                <h2>Flor del Mes</h2>
+        <section class="flor-del-mes">
+            <h2>Flor del Mes</h2>
+            <div class="imagen-principal-placeholder">
+                <img src="static/img/flor-del-mes.jfif" alt="Flor del mes">
             </div>
-            <div>
-                <img src="#" alt="Flor del mes">
+        </section>
+
+        <section class="productos">
+            <div class="productos-header">
+                <span class="resultados">Mostrando <strong>50 resultados</strong></span>
+                <a href="#" class="ver-mas">Ver más Flores</a>
             </div>
-        </div>
+
+            <div class="grid-productos">
+                <div class="producto-card">
+                    <div class="imagen-producto-placeholder">
+                        <img src="static/img/Ramo-de-rosas.jfif" alt="Ramo de rosas">
+                    </div>
+                    <div class="info-producto">
+                        <div class="texto-producto">
+                            <span class="nombre">Ramo de Rosas</span>
+                            <span class="precio">$40.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="imagen-producto-placeholder">
+                        <img src="static/img/arreglo-tulipanes.jfif" alt="Arreglo tulipanes">
+                    </div>
+                    <div class="info-producto">
+                        <div class="texto-producto">
+                            <span class="nombre">Arreglo Tulipanes</span>
+                            <span class="precio">$50.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="imagen-producto-placeholder">
+                        <img src="static/img/bouquet-lirios.jfif" alt="Bouquets lirios">
+                    </div>
+                    <div class="info-producto">
+                        <div class="texto-producto">
+                            <span class="nombre">Bouquet Lirios</span>
+                            <span class="precio">$25.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="static/js/script.js"></script>
